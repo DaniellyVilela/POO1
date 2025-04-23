@@ -174,4 +174,5 @@ System.out.printf -> usado para formatar saida, tipo quero arredonda o PI para s
  
  REGRA SIMPLES:
 	Que usar o double? Usa o System.out.printf
-	
+
+O printf também não pula linha automaticamente!
