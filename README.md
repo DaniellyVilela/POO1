@@ -1,0 +1,142 @@
+_________________________________________________________________________________________________________
+08/04
+_________________________________________________________________________________________________________
+Anotações Java
+o nome do arquivo tem que fica identico ao nome da class
+EX:
+public class Mensagem{
+	public static void main(String[] args){
+	System.out.println("Olá Mundo | Hello World!");
+	}
+}
+O nome do arquivotem que ser Mensagem, tem que ser literalmente igual, tanto no formado quando 
+maisculo ou minisculo, letra por letra.
+Variavel na java é obrigatorio a ter tipo para da certo
+EX:
+        String nome;
+        int idade;
+        String sexo;
+        double peso;
+
+Se utiliza aspas duplas nas strings e ponto-virgula no final, se não coloca da error
+se for int ou float não utiliza aspas duplas
+CTRL D mutiplica a apenas a linha que esta em cima do digitamento 
+
+
+sout ->         System.out.println(); preencher assim como padrão
+_________________________________________________________________________________________________________
+
+15/04
+_________________________________________________________________________________________________________
+Opções de entradas
+
+os arquivos precisam está no src para funciona no java
+_________________________________________________________
+|.nextDouble() -> vai captura o double                   |
+
+|.next(); -> vai captura strings sem espaços             |
+
+|.nextLine();-> usado para captura strings com espaços   |
+
+|.netxInt();-> captura o numero inteiro                  |
+
+----------------------------------------------------------
+
+Para ler uma palavra sem espaço utilizat apenas o .next();
+
+OBS: o double quando usar ponto da erro, ele aceita virgula, mas caso queira que usa ponto defina a localização dos US
+ex: 
+Locale.setDefault(Locale.US)-> usado quando permitirem a entrada com ponto
+
+char sexo = leia.next().charAt(0); -> esse char está definido para pega apenas um caracter como ali no final (0 é associado como o primeiro caracter, o computador começa sempre contar do zero)
+
+_________________________________________________________________________________________________________
+
+Opções de entradas
+
+os arquivos precisam está no src para funciona no java
+_________________________________________________________
+|.nextDouble() -> vai captura o double                   |
+|.next(); -> vai captura strings sem espaços             |
+|.nextLine();-> usado para captura strings com espaços   |
+|.netxInt();-> captura o numero inteiro                  |
+----------------------------------------------------------
+
+Para ler uma palavra sem espaço utilizat apenas o .next();
+
+OBS: o double quando usar ponto da erro, ele aceita virgula, mas caso queira que usa ponto defina a localização dos US
+ex: 
+Locale.setDefault(Locale.US)-> usado quando permitirem a entrada com ponto
+
+curiosidade:
+Pode coloca todas as informações na mesma linha do terminal que conforme programado vai aparece um embaixo do outro
+EXEMPLO:
+        Scanner ler = new Scanner(System.in);
+        String nome = ler.next();
+        int idade = ler.nextInt();
+        double peso = ler.nextDouble();
+		
+        System.out.println("Dados Digitados: ");
+        System.out.println(nome);
+        System.out.println(idade);
+        System.out.println(peso);
+		
+TERMINAL:
+maria 30 4.5 -> informações escritas pelo usuario
+Dados Digitados: 
+maria
+30
+4.5
+__________________________________________________________________________________________________________________________________________________________________________________________
+22/04
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+se os tipos de next line for apos os doubles ou int, vai da ruim. Eles ler o double, int, mas se o next estiver apos a captura, como os exemplos a seguir, ele vai passa reto e não vai ler
+EX:
+
+nextDouble
+nextInt       _>error na certa
+nextLine 
+
+nextInt       _>error na certa
+nextLine 
+
+nextDouble       _>error na certa
+nextLine 
+
+
+Se resolver que antes do next line, você vai colocar uma linha 
+nextInt     
+** -> aquii vai coloca o nextLine, aqui vai captura o espaço que ele estava procurando e segue o codigo normalmente, sem ele os int,
+	  double next antes do line sem essa linha da error e não vai ler a seguir
+nextLine
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+nextDouble
+*       
+nextLine
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+nextInt       
+nextDouble
+**
+nextLine 
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+Exemplo mais realista da solução:
+ public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Idade: ");
+        int idade = leia.nextInt();
+
+        System.out.println("Peso");
+        double peso = leia.nextDouble();
+        leia.nextLine();
+
+        System.out.println("Nome completo: ");
+        String nome = leia.nextLine();
+
+        System.out.println("Idade: " + idade
+                + "\nPeso: " + peso
+                + "\nNome: " + nome);
+				
