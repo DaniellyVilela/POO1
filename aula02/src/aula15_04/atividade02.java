@@ -1,3 +1,5 @@
+package aula15_04;
+
 public class atividade02 {
     public static void main(String[] args) {
         System.out.println("___________________________________\n Atividade 02\n");

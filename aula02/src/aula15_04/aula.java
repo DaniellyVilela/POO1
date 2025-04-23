@@ -1,3 +1,5 @@
+package aula15_04;
+
 public class aula {
     public static void main(String[] args) {
         int n1 = 5;
