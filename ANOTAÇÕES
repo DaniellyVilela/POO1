@@ -1,0 +1,178 @@
+_________________________________________________________________________________________________________
+08/04
+_________________________________________________________________________________________________________
+Anotações Java
+o nome do arquivo tem que fica identico ao nome da class
+EX:
+public class Mensagem{
+	public static void main(String[] args){
+	System.out.println("Olá Mundo | Hello World!");
+	}
+}
+O nome do arquivotem que ser Mensagem, tem que ser literalmente igual, tanto no formado quando 
+maisculo ou minisculo, letra por letra.
+Variavel na java é obrigatorio a ter tipo para da certo
+EX:
+        String nome;
+        int idade;
+        String sexo;
+        double peso;
+
+Se utiliza aspas duplas nas strings e ponto-virgula no final, se não coloca da error
+se for int ou float não utiliza aspas duplas
+CTRL D mutiplica a apenas a linha que esta em cima do digitamento 
+
+
+sout ->         System.out.println(); preencher assim como padrão
+_________________________________________________________________________________________________________
+
+15/04
+_________________________________________________________________________________________________________
+Opções de entradas
+
+os arquivos precisam está no src para funciona no java
+_________________________________________________________
+|.nextDouble() -> vai captura o double                   |
+
+|.next(); -> vai captura strings sem espaços             |
+
+|.nextLine();-> usado para captura strings com espaços   |
+
+|.netxInt();-> captura o numero inteiro                  |
+
+----------------------------------------------------------
+
+Para ler uma palavra sem espaço utilizat apenas o .next();
+
+OBS: o double quando usar ponto da erro, ele aceita virgula, mas caso queira que usa ponto defina a localização dos US
+ex: 
+Locale.setDefault(Locale.US)-> usado quando permitirem a entrada com ponto
+
+char sexo = leia.next().charAt(0); -> esse char está definido para pega apenas um caracter como ali no final (0 é associado como o primeiro caracter, o computador começa sempre contar do zero)
+
+_________________________________________________________________________________________________________
+
+Opções de entradas
+
+os arquivos precisam está no src para funciona no java
+_________________________________________________________
+|.nextDouble() -> vai captura o double                   |
+|.next(); -> vai captura strings sem espaços             |
+|.nextLine();-> usado para captura strings com espaços   |
+|.netxInt();-> captura o numero inteiro                  |
+----------------------------------------------------------
+
+Para ler uma palavra sem espaço utilizat apenas o .next();
+
+OBS: o double quando usar ponto da erro, ele aceita virgula, mas caso queira que usa ponto defina a localização dos US
+ex: 
+Locale.setDefault(Locale.US)-> usado quando permitirem a entrada com ponto
+
+curiosidade:
+Pode coloca todas as informações na mesma linha do terminal que conforme programado vai aparece um embaixo do outro
+EXEMPLO:
+        Scanner ler = new Scanner(System.in);
+        String nome = ler.next();
+        int idade = ler.nextInt();
+        double peso = ler.nextDouble();
+		
+        System.out.println("Dados Digitados: ");
+        System.out.println(nome);
+        System.out.println(idade);
+        System.out.println(peso);
+		
+TERMINAL:
+maria 30 4.5 -> informações escritas pelo usuario
+Dados Digitados: 
+maria
+30
+4.5
+__________________________________________________________________________________________________________________________________________________________________________________________
+22/04
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+se os tipos de next line for apos os doubles ou int, vai da ruim. Eles ler o double, int, mas se o next estiver apos a captura, como os exemplos a seguir, ele vai passa reto e não vai ler
+EX:
+
+nextDouble
+nextInt       _>error na certa
+nextLine 
+
+nextInt       _>error na certa
+nextLine 
+
+nextDouble       _>error na certa
+nextLine 
+
+
+Se resolver que antes do next line, você vai colocar uma linha 
+nextInt     
+** -> aquii vai coloca o nextLine, aqui vai captura o espaço que ele estava procurando e segue o codigo normalmente, sem ele os int,
+	  double next antes do line sem essa linha da error e não vai ler a seguir
+nextLine
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+nextDouble
+*       
+nextLine
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+nextInt       
+nextDouble
+**
+nextLine 
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+Exemplo mais realista da solução:
+ public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Idade: ");
+        int idade = leia.nextInt();
+
+        System.out.println("Peso");
+        double peso = leia.nextDouble();
+        leia.nextLine();
+
+        System.out.println("Nome completo: ");
+        String nome = leia.nextLine();
+
+        System.out.println("Idade: " + idade
+                + "\nPeso: " + peso
+                + "\nNome: " + nome);
+
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+System.out.println -> esse tem quebra de linha
+Exemplo: 
+System.out.println("Oi");
+System.out.println("Oi");
+System.out.println("Oi"); 
+-> Os ois vão sai tudo um embaixo do outro
+
+
+System.out.print -> ele não tem quebra de linha
+Exemplo: 
+System.out.print("oi");
+System.out.print("oi");
+System.out.print("oi");
+System.out.print("oi");
+-> os oi vão aparece tudo um na frente do outro
+
+System.out.printf -> usado para formatar saida, tipo quero arredonda o PI para só 3 casas demais, esse é o unico que resolver! Ele tem algumas particularidade
+ double x = 10.6532
+ 
+ System.out.printf("%.2f\n", x) -> ele mostra apenas os 2 números depois da virgula, das casas decimais, caso queira mostra mais casas troca o 2 pelo tanto que deseja!
+ ->2 número de casa decimais que quero que mostre
+ f-> abreviação da formatação ou float
+ %-> usado em conjunto com outras funções para conseguir o arredondamento desejado, especialmente quando se trata de arredondar para um número inteiro específico ou para um certo número de casas decimais. 
+ %f ->números flutuantes 
+ %d -> inteiros
+ %s -> textos
+ %n -> quebra linhas
+ para a formação é necessario coloca a virgula e a variaavel que deseja formatar
+ Obs: Essa formatação arredonda
+ 
+ REGRA SIMPLES:
+	Que usar o double? Usa o System.out.printf
+
+O printf também não pula linha automaticamente!
