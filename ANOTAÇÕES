@@ -176,3 +176,23 @@ System.out.printf -> usado para formatar saida, tipo quero arredonda o PI para s
 	Que usar o double? Usa o System.out.printf
 
 O printf também não pula linha automaticamente!
+
+__________________________________________________________________________________________________________________________________________________________________________________________
+29/04
+__________________________________________________________________________________________________________________________________________________________________________________________
+.equals() -> para verifica se a string no java ao inves do ==
+&& -> igual o and do python
+todas vez que trabalha com string trabalha com o equals, caso queira ver se a string, no if, está igual se utilizar o equals
+
+== -> utilizar para verifica se é igual mas só trabalha com double ou int, nada de string
+
+com double especifica o número de casa depois da virgula se não ele mesmo acrescenta número
+
+na string o '==' significa outra coisa, pode funciona, mas ele é usado para outra função, mas pode funciona igual o .equals. 
+Ele com o === analisa o endereço e conteudo, muito complicado, mas vai explica depois
+
+CONDICIONAL
+-Int -> ==
+-Double -> ==
+-String -> equals
+
