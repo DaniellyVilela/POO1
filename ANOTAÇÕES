@@ -196,3 +196,6 @@ CONDICIONAL
 -Double -> ==
 -String -> equals
 
+________
+para nomes na frente da pergunta é só digita print sem o ln
+--------
