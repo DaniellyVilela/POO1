@@ -60,7 +60,7 @@ public class atividade01 {
         else {
             System.out.println("INVÁLIDO!");
         }
-        System.out.println("__________________________________________________");
+        System.out.println("\n__________________________________________________");
 
     }
 }
