@@ -5,6 +5,7 @@ public class Cachorro {
     int idade;
     double peso;
 
+    //Principal ↓
     public static void main(String[] args) {
         Cachorro c = new Cachorro(); //objeto acabado de criar
 

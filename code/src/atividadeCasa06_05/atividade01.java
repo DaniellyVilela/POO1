@@ -50,16 +50,14 @@ public class atividade01 {
             System.out.println("\nAltura: " + altura);
             System.out.printf("IMC: %.2f \nCategoria do IMC: OBESIDADE GRAU II",imc);
 
-        } else if (imc >= 40.0) {
+        } else {
             System.out.print("Nome e idade: " + nome_completo + ", "+idade);
             System.out.printf("\nPeso: %.2f kg", peso);
             System.out.println("\nAltura: " + altura);
             System.out.printf("IMC: %.2f \nCategoria do IMC: OBESIDADE GRAU III",imc);
 
         }
-        else {
-            System.out.println("INVÁLIDO!");
-        }
+
         System.out.println("\n__________________________________________________");
 
     }

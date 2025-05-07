@@ -5,6 +5,13 @@ public class Pessoa {
     String cpf;
     String telefone;
 
+    //Metodo ↓
+    void mostrarCPF(){
+
+        System.out.println("O CPF da pessoa é " + cpf);
+    }
+
+    //Principal ↓
     public static void main(String[] args) {
        Pessoa p = new Pessoa();
        p.nome = "Pedro";
@@ -13,8 +20,9 @@ public class Pessoa {
 
        System.out.println("___________________________________________________");
        System.out.println("Nome: "+p.nome);
-       System.out.println("CPF: "+p.cpf);
        System.out.println("Telefone: "+p.telefone);
+       System.out.println("___________________________________________________");
+       p.mostrarCPF();
        System.out.println("___________________________________________________");
 
     }
