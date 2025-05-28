@@ -33,6 +33,12 @@ public class Triangulo {
         if (x.validaTriangulo() && y.validaTriangulo()) {
             System.out.printf("Área do Triangulo x: %.2f \n", x.calculaArea());
             System.out.printf("Área do Triangulo Y: %.2f \n", y.calculaArea());
+            if (x.calculaArea() < y.calculaArea()) {
+                System.out.println("Y maior");
+            }
+            else {
+                System.out.println("X maior");
+            }
         }
         else {
             System.out.print("Nothing...");
