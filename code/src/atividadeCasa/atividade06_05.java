@@ -1,8 +1,8 @@
-package atividadeCasa06_05;
+package atividadeCasa;
 
 import java.util.Scanner;
 
-public class atividade01 {
+public class atividade06_05 {
     public static void main(String[] args) {
         Scanner li = new Scanner(System.in);
         System.out.print("Nome Completo: ");
