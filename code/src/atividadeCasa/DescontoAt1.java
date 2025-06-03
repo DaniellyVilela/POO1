@@ -2,7 +2,7 @@ package atividadeCasa;
 
 import java.util.Scanner;
 
-public class atividade27_05 {
+public class DescontoAt1 {
     double percentual = 10.0;
     double preco = 100.0;
 
@@ -17,7 +17,7 @@ public class atividade27_05 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        atividade27_05 p = new atividade27_05();
+        DescontoAt1 p = new DescontoAt1();
         System.out.print("Preço: R$");
         p.preco = sc.nextDouble();
         System.out.print("Desconto: ");

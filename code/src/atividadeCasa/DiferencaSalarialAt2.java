@@ -1,6 +1,6 @@
 package atividadeCasa;
 
-public class Doisatividade27_05 {
+public class DiferencaSalarialAt2 {
     double salario;
 
     void funcionario(double salario1, double salario2) {
@@ -12,13 +12,13 @@ public class Doisatividade27_05 {
 
         }
         else {
-            System.out.printf("A diferença salarial: R$%.2f\n", salario3);
+            System.out.printf("A diferença salarial R$%.2f\n", salario3);
         }
     }
     public static void main(String[] args) {
-        Doisatividade27_05 joao = new Doisatividade27_05();
-        Doisatividade27_05 maria = new Doisatividade27_05();
-        Doisatividade27_05 total = new Doisatividade27_05();
+        DiferencaSalarialAt2 joao = new DiferencaSalarialAt2();
+        DiferencaSalarialAt2 maria = new DiferencaSalarialAt2();
+        DiferencaSalarialAt2 total = new DiferencaSalarialAt2();
 
         joao.salario = 3000;
         maria.salario = 3500;
