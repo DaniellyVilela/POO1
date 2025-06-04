@@ -18,6 +18,6 @@ public class Funcionario {
         Funcionario lucas = new Funcionario();
         davi.salario = 2000;
         lucas.salario = 1000;
-    System.out.print("Diferença: "+davi.diferencaSalarial(lucas,davi.salario));
+    System.out.print("Diferença: R$"+davi.diferencaSalarial(lucas,davi.salario));
     }
 }
