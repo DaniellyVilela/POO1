@@ -1,0 +1,7 @@
+17/06
+quando o atribudo não é estatico, cada objeto possui a sua cópia.
+Ent o estatico não peretece ao objeto e sim na classe, só existe um unico membro igual aquela classe
+é como saber o total de alunos de uma clsse, isso usa static
+o static pertence a classe e não a um individuo, não precisa criar um objeto para acessa um atributo static
+
+Exemplo disso está no arqivo exemplo1
