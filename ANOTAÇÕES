@@ -251,3 +251,44 @@ ________________________________________________________________________________
 17/06
 __________________________________________________________________________________________________________________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________________________________________________
+NÃO DEVE ANOTAÇÕES NESSE DIA!!!
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+24/06
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+O encapsulamento é uma forma de proteger as informações, você esconde os atributos, a ideia é esconde os detalhes internos
+ESCAPSULAMENTO == ESCONDER
+utilizar metodos para ter esse acesso
+
+metodos publicos chamados get e set
+
+Um exemplo disso é a maquina de cafe, onde só ver ligar, desliga e iniciar, mas as valvulas, fios entre outros você não ver
+
+1-Torne pos atributos private(orivado) onde só poderá ser acessado dentro da propria classe
+
+EXEMPLO:
+
+private String nome; //atributo encapsulado
+
+//metodopara ler o nome
+public String getNome(){ //o string é o tipo do get
+return nome}
+___________________________________________________________________________________________________________________________________________
+|get == para capturar a informação dentro do quadrado, se esta usando get é porque está tirando o nome de lá, nesse não tem parametro     |
+|set == para coloca a informação dentro do quadrado, nãp tem return e é do tipo void, ai nisso tem parametro                              |
+___________________________________________________________________________________________________________________________________________
+public void setNome(String Nome){
+    this.nome= nome
+}
+
+Obs: dá para fazer get de referencia
+
+
+GET TEM TIPAGEM, NÃO TEM PARAMETRO E TEM RETURN
+SET NÃO TEM TIPAGEM, TEM PARAMETRO E NÃO TEM RETURN
+
+A ideia atrás do encapsulamento é a validação, caso precise validar use o encapsulamento!
+EXEMPLO:
+Um aluno pode receber -5 nota ou acima de 100?
+Nesse caso utilizer o encapsulamento.
