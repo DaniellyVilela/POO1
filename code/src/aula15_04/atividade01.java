@@ -2,7 +2,7 @@ package aula15_04;
 
 public class atividade01{
     public static void main(String[] args) {
-        System.out.println("___________________________________\n Atividade 01\n");
+        System.out.println("___________________________________\n aula08_07.Atividade 01\n");
 
         int n1 = 8;
         int n2 = 2;

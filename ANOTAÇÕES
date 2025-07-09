@@ -292,3 +292,29 @@ A ideia atrás do encapsulamento é a validação, caso precise validar use o en
 EXEMPLO:
 Um aluno pode receber -5 nota ou acima de 100?
 Nesse caso utilizer o encapsulamento.
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+08/07
+__________________________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
+public -> acessao pelas classes, sub classes é pacotes do projeto
+Proj
+|_pacote1
+|   |->classe1
+|_pacote2
+    |->classe2
+
+default -> vazio, o padrão sem atributos ou modificadores
+no default a visibilidade é somente no pact1 e classe não é visivel
+em classes que tem pacote diferente
+
+
+            classe  pacote   subclasse   todos
+public     |   x   |  x    |    x      |   x
+protected  |   x   |  x    |    x      |
+default    |   x   |  x    |
+privete    |   x   |
+
+
+super() ->chamar o construto da superclasse
+super.metodo()->chama um metodo da superclasse

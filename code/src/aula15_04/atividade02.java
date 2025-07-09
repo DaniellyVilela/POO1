@@ -2,7 +2,7 @@ package aula15_04;
 
 public class atividade02 {
     public static void main(String[] args) {
-        System.out.println("___________________________________\n Atividade 02\n");
+        System.out.println("___________________________________\n aula08_07.Atividade 02\n");
 
         double nota1 = 7.5;
         double nota2 = 8.0;

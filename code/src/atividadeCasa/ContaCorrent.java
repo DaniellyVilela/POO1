@@ -44,7 +44,7 @@ public class ContaCorrent {
     }
 
     void exibi(){
-        System.out.println("___________________________________");
+        System.out.println("=== RESUMO DA CONTA CORRENTE === ");
         System.out.println("Número da conta: " + nConta);
         System.out.println("Titular: " + titula);
         System.out.printf("Saldo atual: R$%.2f\n", saldo);
