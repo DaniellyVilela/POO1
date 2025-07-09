@@ -318,3 +318,10 @@ privete    |   x   |
 
 super() ->chamar o construto da superclasse
 super.metodo()->chama um metodo da superclasse
+
+
+@Override -> sobrescrever a classe herdada
+quando for pirvate não terá acesso a outros pacotes
+
+se vai acessa diretamente privete
+indiretamente protected

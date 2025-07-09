@@ -9,6 +9,7 @@ public class Produto {
         this.preco = preco;
     }
     public void imprimir() {
+        System.out.println("--- Detalhes do Produto ---");
         System.out.println("Nome: " + nome);
         System.out.println("Preço: " + preco);
     }
